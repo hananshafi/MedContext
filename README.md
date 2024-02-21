@@ -30,7 +30,7 @@ Official code for the paper "MedContext: Learning Contextual Cues for Efficient 
 * Code for UNETR is released. [Feb 22, 2024]
 
 ## Highlights
-![intro-diagram]()
+
 
 > **Abstract:** * *
 >
