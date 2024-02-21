@@ -46,7 +46,7 @@ them with their textual descriptions, recomposing objects as needed to ensure co
 
 
 ## Methodology
-![main-figure](https://github.com/hananshafi/llmblueprint/blob/main/docs/3dmsr_main_diagram.png)
+![main-figure](https://github.com/hananshafi/MedContext/blob/main/assets/3dmsr_main_diagram.png)
 
 
 
