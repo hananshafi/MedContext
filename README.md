@@ -30,9 +30,9 @@ Official code for the paper "MedContext: Learning Contextual Cues for Efficient 
 * Code for UNETR is released. [Feb 22, 2024]
 
 ## Highlights
-![intro-diagram](https://github.com/hananshafi/llmblueprint/blob/main/docs/intro_image_arxiv.png)
+![intro-diagram]()
 
-> **Abstract:** *Diffusion-based generative models have significantly advanced text-to-image generation but encounter challenges when processing lengthy and intricate text prompts describing complex scenes with multiple objects. While excelling in generating images from short, single-object descriptions, these models often struggle to faithfully capture all the nuanced details within longer and more elaborate textual inputs. In response, we present a novel approach leveraging Large Language Models (LLMs) to extract critical components from text prompts, including bounding box coordinates for foreground objects, detailed textual descriptions for individual objects, and a succinct background context. These components form the foundation of our layout-to-image generation model, which operates in two phases. The initial Global Scene Generation utilizes object layouts and background context to create an initial scene but often falls short in faithfully representing object characteristics as specified in the prompts. To address this limitation, we introduce an Iterative Refinement Scheme that iteratively evaluates and refines box-level content to align them with their textual descriptions, recomposing objects as needed to ensure consistency. Our evaluation on complex prompts featuring multiple objects demonstrates a substantial improvement in recall compared to baseline diffusion models. This is further validated by a user study, underscoring the efficacy of our approach in generating coherent and detailed scenes from intricate textual inputs.*
+> **Abstract:** * *
 >
 <hr>
 
@@ -51,28 +51,21 @@ them with their textual descriptions, recomposing objects as needed to ensure co
 
 
 ## Installation
-This codebase is tested on Ubuntu 20.04.2 LTS with python 3.8. Follow the below steps to create environment and install dependencies.
 
 ```bash
 # Create a conda environment
-conda create -n llmblueprint python==3.8
+conda create -n medcontext python==3.8
 
 # Activate the environment
-conda activate llmblueprint
+conda activate medcontext
 
 # Install requirements
 pip install -r requirements.txt
 ```
 
-## Run LLMBlueprint
+## Run MedContext
 
-Download the pretrained weights of composition model from [here](https://github.com/Fantasy-Studio/Paint-by-Example) and provide its path in yaml files placed inside configs folder.
 
-#### Generate
-```bash
-python main.py --config configs/livingroom_1.yaml
-```
-The hyperparameters and input arguments can be modified inside yaml files.
 
 ## Contact
 Should you have any questions, please contact at hanan.ghani@mbzuai.ac.ae
@@ -80,14 +73,7 @@ Should you have any questions, please contact at hanan.ghani@mbzuai.ac.ae
 ## Citation
 If you use our work, please consider citing:
 ```bibtex 
-@misc{gani2023llm,
-      title={LLM Blueprint: Enabling Text-to-Image Generation with Complex and Detailed Prompts}, 
-      author={Hanan Gani and Shariq Farooq Bhat and Muzammal Naseer and Salman Khan and Peter Wonka},
-      year={2023},
-      eprint={2310.10640},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+
 ```
 ## Acknowledgements
-Our code is built on the repositories of  [LLM Grounded Diffusion](https://github.com/TonyLianLong/LLM-groundedDiffusion) and [Paint by Example](https://github.com/Fantasy-Studio/Paint-by-Example). We thank them for their open-source implementation and instructions.
+Our code is built on the repositories of  [MONAI](https://github.com/Project-MONAI/research-contributions). We thank them for their open-source implementation and instructions.
