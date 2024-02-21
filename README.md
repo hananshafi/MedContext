@@ -37,12 +37,9 @@ Official code for the paper "MedContext: Learning Contextual Cues for Efficient 
 <hr>
 
 ## Main Contributions
-* **Scene Blueprints:** we present a novel approach leveraging Large Language Models (LLMs)
-to extract critical components from text prompts, including bounding box coordinates for foreground objects, detailed textual descriptions for individual objects,
-and a succinct background context. Utilizing bounding 
-* **Global Scene Generation:** Utilzing the bounding box layout and genralized background prompt, we generate an initial image using Layout-to-Image generator.
-* **Iterative Refinement Scheme :** Given the initial image, our proposed refinement mechanism iteratively evaluates and refines the box-level content of each object to align
-them with their textual descriptions, recomposing objects as needed to ensure consistency.
+* We propose a universal training framework called **MedContext** that is architecture-agnostic and can be incorporated into any existing training frame- work for 3D medical segmentation. 
+* Our approach effectively learns self-supervised contextual cues jointly with the supervised voxel segmentation task without requiring large-scale annotated volumetric medical data or dedicated pretraining-finetuning stages. The proposed approach induces contextual knowledge in the network by learning to reconstruct the missing organ or parts of an organ in the output segmentation space.
+* We validate the effectiveness of our approach across multiple 3D medical datasets and state-of-the-art model architectures. Our approach complements existing methods and improves segmentation performance in conventional as well as few-shot data scenarios
 
 
 ## Methodology
