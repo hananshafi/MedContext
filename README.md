@@ -5,7 +5,7 @@
 
 <sup>1</sup>Mohamed Bin Zayed University of AI      <sup>2</sup>Linkoping University      <sup>3</sup>Australian National University
 
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2402.17725)
 
 Official code for the paper "MedContext: Learning Contextual Cues for Efficient Volumetric Medical Segmentation".
 
