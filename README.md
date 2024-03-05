@@ -70,7 +70,12 @@ Should you have any questions, please contact at hanan.ghani@mbzuai.ac.ae
 ## Citation
 If you use our work, please consider citing:
 ```bibtex 
-
+@article{gani2024medcontext,
+  title={MedContext: Learning Contextual Cues for Efficient Volumetric Medical Segmentation},
+  author={Gani, Hanan and Naseer, Muzammal and Khan, Fahad and Khan, Salman},
+  journal={arXiv preprint arXiv:2402.17725},
+  year={2024}
+}
 ```
 ## Acknowledgements
 Our code is built on the repositories of  [MONAI](https://github.com/Project-MONAI/research-contributions). We thank them for their open-source implementation and instructions.
