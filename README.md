@@ -32,7 +32,25 @@ Official code for the paper "MedContext: Learning Contextual Cues for Efficient 
 ## Highlights
 
 
-> **Abstract:** * *
+> **Abstract:** *Volumetric medical segmentation is a critical component
+of 3D medical image analysis that delineates different semantic regions. Deep neural networks have significantly
+improved volumetric medical segmentation, but they generally require large-scale annotated data to achieve better
+performance, which can be expensive and prohibitive to obtain. To address this limitation, existing works typically
+perform transfer learning or design dedicated pretrainingfinetuning stages to learn representative features. However,
+the mismatch between the source and target domain can
+make it challenging to learn optimal representation for volumetric data, while the multi-stage training demands higher
+compute as well as careful selection of stage-specific design choices. In contrast, we propose a universal training
+framework called MedContext that is architecture-agnostic
+and can be incorporated into any existing training framework for 3D medical segmentation. Our approach effectively learns self-supervised contextual cues jointly with
+the supervised voxel segmentation task without requiring
+large-scale annotated volumetric medical data or dedicated
+pretraining-finetuning stages. The proposed approach induces contextual knowledge in the network by learning to
+reconstruct the missing organ or parts of an organ in the
+output segmentation space. The effectiveness of MedContext is validated across multiple 3D medical datasets and
+four state-of-the-art model architectures. Our approach
+demonstrates consistent gains in segmentation performance
+across datasets and different architectures even in few-shot
+data scenarios*
 >
 <hr>
 
