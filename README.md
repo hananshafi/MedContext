@@ -83,13 +83,13 @@ pip install -r requirements.txt
 
 ```bash
 cd UNETR/BTCV
-python main.py --json_list dataset_synapse_split.json --val_every 100 --batch_size=1 --feature_size=32 --rank 0 --logdir=PATH/TO/OUTPUT/FOLDER --optim_lr=1e-4 --lrschedule=warmup_cosine --infer_overlap=0.5 --save_checkpoint --data_dir=YOUR/DATA/DIRECTORY
+python main.py --json_list dataset_synapse_split.json --val_every 100 --batch_size=1 --feature_size=32 --rank 0 --logdir=PATH/TO/OUTPUT/FOLDER --optim_lr=1e-4 --lrschedule=warmup_cosine --infer_overlap=0.5 --save_checkpoint --data_dir=./dataset
 ```
 Training support for other models and datasets will be released soon
 
 ### Test UNETR on BTCV: 
 ```bash
-python test_8.py --infer_overlap=0.5 --json_list dataset_synapse_split.json --feature_size 32 --data_dir=YOUR/DATA/DIRECTORY --pretrained_model_name student_4000.pt --pretrained_dir='PATH/TO/SAVED/CHECKPOINT' --saved_checkpoint=ckpt
+python test_8.py --infer_overlap=0.5 --json_list dataset_synapse_split.json --feature_size 32 --data_dir=./dataset --pretrained_model_name student_4000.pt --pretrained_dir='PATH/TO/SAVED/CHECKPOINT' --saved_checkpoint=ckpt
 ```
 Change the --pretrained_model_name according to your saved checkpoint
 
