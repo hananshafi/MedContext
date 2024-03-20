@@ -43,7 +43,7 @@ Official code for the paper "MedContext: Learning Contextual Cues for Efficient 
 
 
 ## Methodology
-![main-figure](https://github.com/hananshafi/MedContext/blob/main/assets/3dmsr_main_diagram.png)
+![](https://github.com/hananshafi/MedContext/blob/main/assets/3dmsr_main_diagram.png)
 
 
 
@@ -61,8 +61,19 @@ pip install -r requirements.txt
 ```
 
 ## Run MedContext
+### Train UNETR on BTCV: 
 
+```bash
+cd UNETR/BTCV
+python main.py --json_list dataset_synapse_split.json --val_every 100 --batch_size=1 --feature_size=32 --rank 0 --logdir=PATH/TO/OUTPUT/FOLDER --optim_lr=1e-4 --lrschedule=warmup_cosine --infer_overlap=0.5 --save_checkpoint --data_dir=YOUR/DATA/DIRECTORY
+```
+Training support for other models and datasets will be released soon
 
+### Test UNETR on BTCV: 
+```bash
+python test_8.py --infer_overlap=0.5 --json_list dataset_synapse_split.json --feature_size 32 --data_dir=YOUR/DATA/DIRECTORY --pretrained_model_name student_4000.pt --pretrained_dir='PATH/TO/SAVED/CHECKPOINT' --saved_checkpoint=ckpt
+```
+Change the --pretrained_model_name according to your saved checkpoint
 
 ## Contact
 Should you have any questions, please contact at hanan.ghani@mbzuai.ac.ae
