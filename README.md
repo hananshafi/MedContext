@@ -27,6 +27,7 @@ Official code for the paper "MedContext: Learning Contextual Cues for Efficient 
 
 ## Updates
 
+* Our paper is accepted at MICCAI'23 (acceptance rate < 31%)
 * Code for UNETR is released. [Feb 22, 2024]
 
 ## Highlights
