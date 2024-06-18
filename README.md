@@ -1,4 +1,4 @@
-# MedContext:  Learning Contextual Cues for Efficient Volumetric Medical Segmentation
+# MedContext:  Learning Contextual Cues for Efficient Volumetric Medical Segmentation [MICCAI'24]
 (full code and all the models will be released soon!)
 
 [Hanan Gani<sup>1</sup>](https://hananshafi.github.io/), [Muzammal Naseer<sup>1</sup>](https://muzammal-naseer.com/), [Fahad Khan<sup>1,2</sup>](https://sites.google.com/view/fahadkhans/home), [Salman Khan<sup>1,3</sup>](https://salman-h-khan.github.io/)
