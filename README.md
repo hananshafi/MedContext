@@ -126,7 +126,7 @@ Training support for other models and datasets will be released soon
 
 ### Test UNETR on BTCV: 
 ```bash
-python test_8.py --infer_overlap=0.5 --json_list dataset_synapse_split.json --feature_size 32 --data_dir=./dataset --pretrained_model_name student_4000.pt --pretrained_dir='PATH/TO/SAVED/CHECKPOINT' --saved_checkpoint=ckpt
+python test_8.py --infer_overlap=0.5 --json_list dataset_18_12.json --feature_size 32 --data_dir=./dataset --pretrained_model_name student_4000.pt --pretrained_dir='PATH/TO/SAVED/CHECKPOINT' --saved_checkpoint=ckpt
 ```
 Change the --pretrained_model_name according to your saved checkpoint
 
