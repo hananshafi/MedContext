@@ -101,7 +101,7 @@ Please refer to [Setting up the datasets](https://github.com/282857341/nnFormer)
 The dataset folders for Synapse should be organized as follows: 
 
 ```
-./DATASET_Synapse/
+./UNETR/BTCV/dataset/
   ├── unetr_pp_raw/
       ├── unetr_pp_raw_data/
            ├── Task02_Synapse/
@@ -120,7 +120,7 @@ The dataset folders for Synapse should be organized as follows:
 
 ```bash
 cd UNETR/BTCV
-python main.py --json_list dataset_synapse_split.json --val_every 100 --batch_size=1 --feature_size=32 --rank 0 --logdir=PATH/TO/OUTPUT/FOLDER --optim_lr=1e-4 --lrschedule=warmup_cosine --infer_overlap=0.5 --save_checkpoint --data_dir=./dataset
+python main.py --json_list dataset_18_12.json --val_every 100 --batch_size=1 --feature_size=32 --rank 0 --logdir=PATH/TO/OUTPUT/FOLDER --optim_lr=1e-4 --lrschedule=warmup_cosine --infer_overlap=0.5 --save_checkpoint --data_dir=./dataset
 ```
 Training support for other models and datasets will be released soon
 
