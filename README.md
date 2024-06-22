@@ -89,8 +89,11 @@ The dataset contains 13 abdominal organs including 1. Spleen 2. Right Kidney 3. 
 In this paper, we utilize 8 organs. Refer to our paper for further details.
 
 Task: Segmentation
+
 Modality: CT
+
 Size: 30 3D volumes (18 Training + 12 Testing)
+
 We provide the json file  that is used to train our models under ./datasets folder [here](https://github.com/hananshafi/MedContext/blob/main/UNETR/BTCV/dataset/dataset_18_12.json).
 
 ## Run MedContext
