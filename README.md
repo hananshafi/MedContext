@@ -96,6 +96,25 @@ Size: 30 3D volumes (18 Training + 12 Testing)
 
 We provide the json file  that is used to train our models under ./datasets folder [here](https://github.com/hananshafi/MedContext/blob/main/UNETR/BTCV/dataset/dataset_18_12.json).
 
+Please refer to [Setting up the datasets](https://github.com/282857341/nnFormer) on nnFormer repository for more details. Alternatively, you can download the preprocessed dataset for Synapse [here](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EbHDhSjkQW5Ak9SMPnGCyb8BOID98wdg3uUvQ0eNvTZ8RA?e=YVhfdg).
+
+The dataset folders for Synapse should be organized as follows: 
+
+```
+./DATASET_Synapse/
+  ├── unetr_pp_raw/
+      ├── unetr_pp_raw_data/
+           ├── Task02_Synapse/
+              ├── imagesTr/
+              ├── imagesTs/
+              ├── labelsTr/
+              ├── labelsTs/
+              ├── dataset.json
+           ├── Task002_Synapse
+       ├── unetr_pp_cropped_data/
+           ├── Task002_Synapse
+ ```
+
 ## Run MedContext
 ### Train UNETR on BTCV: 
 
