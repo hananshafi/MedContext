@@ -84,7 +84,10 @@ pip install -r requirements.txt
 
 The BTCV data is from the [BTCV challenge dataset](https://www.synapse.org/#!Synapse:syn3193805/wiki/217752).
 
-The dataset contains 13 abdominal organs including 1. Spleen 2. Right Kidney 3. Left Kideny 4.Gallbladder 5.Esophagus 6. Liver 7. Stomach 8.Aorta 9. IVC 10. Portal and Splenic Veins 11. Pancreas 12. Right adrenal gland 13. Left adrenal gland. In this paper, we utilize 8 organs. Refer to our paper for further details.
+The dataset contains 13 abdominal organs including 1. Spleen 2. Right Kidney 3. Left Kideny 4. Gallbladder 5. Esophagus 6. Liver 7. Stomach 8. Aorta 9. IVC 10. Portal and Splenic Veins 11. Pancreas 12. Right adrenal gland 13. Left adrenal gland.
+
+In this paper, we utilize 8 organs. Refer to our paper for further details.
+
 Task: Segmentation
 Modality: CT
 Size: 30 3D volumes (18 Training + 12 Testing)
