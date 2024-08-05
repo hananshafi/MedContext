@@ -139,6 +139,19 @@ export nnFormer_preprocessed="$DATASET_PATH"/unetr_pp_raw/unetr_pp_raw_data/Task
 export nnFormer_raw_data_base="$DATASET_PATH"/unetr_pp_raw
 python nnformer/run/run_training.py 3d_fullres nnFormerTrainerV2_nnformer_synapse 2 0 -c
 ```
+### Test nnFormer on BTCV
+
+```bash
+cd nnFormer
+DATASET_PATH=./UNETR/BTCV/dataset/
+
+export PYTHONPATH=./
+export RESULTS_FOLDER=PATH/TO/SAVE/CHECKPOINTS/
+export nnFormer_preprocessed="$DATASET_PATH"/unetr_pp_raw/unetr_pp_raw_data/Task02_Synapse
+export nnFormer_raw_data_base="$DATASET_PATH"/unetr_pp_raw
+python nnformer/run/run_training.py 3d_fullres nnFormerTrainerV2_nnformer_synapse 2 0 -val --valbest --val_folder VAL_BEST
+```
+The argument --valbest ensures that best checkpoint is used for inference. If --valbest is not present, final checkpoint is used for inference.
 
 ## Contact
 Should you have any questions, please contact at hanan.ghani@mbzuai.ac.ae
