@@ -130,6 +130,19 @@ python test_8.py --infer_overlap=0.5 --json_list dataset_18_12.json --feature_si
 ```
 Change the --pretrained_model_name according to your saved checkpoint
 
+### Train nnFormer on BTCV
+
+```bash
+cd nnFormer
+DATASET_PATH=./UNETR/BTCV/dataset/
+
+export PYTHONPATH=./
+export RESULTS_FOLDER=PATH/TO/SAVE/CHECKPOINTS/
+export nnFormer_preprocessed="$DATASET_PATH"/unetr_pp_raw/unetr_pp_raw_data/Task02_Synapse
+export nnFormer_raw_data_base="$DATASET_PATH"/unetr_pp_raw
+python nnformer/run/run_training.py 3d_fullres nnFormerTrainerV2_nnformer_synapse 2 0 -c
+```
+
 ## Contact
 Should you have any questions, please contact at hanan.ghani@mbzuai.ac.ae
 
