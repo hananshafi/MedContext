@@ -199,9 +199,9 @@ def main():
             else:
                 trainer.load_final_checkpoint(train=False)
 
-        trainer.network.eval()
-        #trainer.teacher_network.eval()
-        #trainer.student_network.eval()
+        #trainer.network.eval()
+        trainer.teacher_network.eval()
+        trainer.student_network.eval()
 
         # predict validation
         trainer.validate(save_softmax=args.npz, validation_folder_name=val_folder,
