@@ -69,14 +69,11 @@ data scenarios*
 ## Installation
 
 ```bash
-# Create a conda environment
-conda create -n medcontext python==3.8
+# Create conda environment from yaml file
+conda env create --name medcontext --file=environments.yml
 
 # Activate the environment
 conda activate medcontext
-
-# Install requirements
-pip install -r requirements.txt
 ```
 
 ## Datasets
