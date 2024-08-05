@@ -70,7 +70,7 @@ data scenarios*
 
 ```bash
 # Create conda environment from yaml file
-conda env create --name medcontext --file=environments.yml
+conda env create --name medcontext --file=environment.yml
 
 # Activate the environment
 conda activate medcontext
